@@ -1,0 +1,2476 @@
+
+tfs_init()
+    conn:
+    proto_major = 7
+    proto_minor = 33
+    async_read = 1
+    max_write = 131072
+    max_readahead = 131072
+    capable = 00000ffb
+    want = 00000010
+    max_background = 0
+    congestion_threshold = 0
+    context:
+    fuse = 147138a0
+    uid = 0
+    gid = 0
+    pid = 0
+    private_data = 147132a0
+    logfile = 14713360
+    devpath = /dev/sdb
+    umask = 00000
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 0 
+	got ind: 0
+retstat: -2
+}
+tfs_mknod {
+	/x
+tfs_open() {
+	 Last file: /x
+	fcnt: 0 
+    fi:
+    flags = 0x00000001
+    fh_old = 0x7f062a51488c
+    writepage = 469765440
+    direct_io = 0
+    keep_cache = 1
+    fh = 0x00007f0629ac6b90
+    lock_owner = 0x00007f061c000d40
+> ftbl_newfile
+	 index: 0
+		new size:1 
+< ftbl_newfile
+full path is: /x
+npath: 
+}
+
+tfs_release(path="/x", fi=0x29ac6ab0)
+tfs_release {
+	/x
+    fi:
+    flags = 0x00000001
+    fh_old = 0x7f062a51488c
+    writepage = 469765440
+    direct_io = 0
+    keep_cache = 1
+    fh = 0x0000000000000000
+    lock_owner = 0x00007f061c000d40
+}
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 1 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_open() {
+	 Last file: /x
+	fcnt: 1 
+	[0] x
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /x
+npath: 
+}
+tfs_flush {
+	/x
+}
+tfs_utime {
+	/x
+	fcnt: 1 
+	[0] x
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 1 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_flush {
+	/x
+}
+
+tfs_release(path="/x", fi=0x2a2e9c50)
+tfs_release {
+	/x
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 1 
+	[0] x
+	got ind: 1
+retstat: -2
+}
+tfs_mknod {
+	/y
+tfs_open() {
+	 Last file: /y
+	fcnt: 1 
+	[0] x
+    fi:
+    flags = 0x00000001
+    fh_old = 0x7f062a51488c
+    writepage = 603988208
+    direct_io = 0
+    keep_cache = 1
+    fh = 0x00007f062a2e9b90
+    lock_owner = 0x00007f06240020f0
+> ftbl_newfile
+	 index: 1
+		new size:2 
+< ftbl_newfile
+full path is: /y
+npath: 
+}
+
+tfs_release(path="/y", fi=0x2a2e9ab0)
+tfs_release {
+	/y
+    fi:
+    flags = 0x00000001
+    fh_old = 0x7f062a51488c
+    writepage = 603988208
+    direct_io = 0
+    keep_cache = 1
+    fh = 0x0000000000000001
+    lock_owner = 0x00007f06240020f0
+}
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 2 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_open() {
+	 Last file: /y
+	fcnt: 2 
+	[0] x
+	[1] y
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /y
+npath: 
+}
+tfs_flush {
+	/y
+}
+tfs_utime {
+	/y
+	fcnt: 2 
+	[0] x
+	[1] y
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 2 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_flush {
+	/y
+}
+
+tfs_release(path="/y", fi=0x29ac6c50)
+tfs_release {
+	/y
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000001
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000001
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 2 
+	[0] x
+	[1] y
+	got ind: 2
+retstat: -2
+}
+tfs_mkdir {
+	/t1
+> ftbl_newfile
+	 index: 2
+		new size:3 
+< ftbl_newfile
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 3 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 3 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 3
+retstat: -2
+}
+tfs_mkdir {
+	/t2
+> ftbl_newfile
+	 index: 3
+		new size:4 
+< ftbl_newfile
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_opendir {
+	/
+}
+tfs_readdir {
+	/
+	reading /mnt (4 files). why errors?
+	x
+	y
+	t1
+	t2
+	finished reading /mnt
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 4 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 4 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_releasedir {
+	/
+}
+tfs_opendir {
+	/t1
+}
+tfs_readdir {
+	/t1
+dirname: /t1
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+0
+Creating first list
+}
+tfs_releasedir {
+	/t1
+}
+tfs_opendir {
+	/t2
+}
+tfs_readdir {
+	/t2
+dirname: /t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+0
+Creating first list
+}
+tfs_releasedir {
+	/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 4 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t1/x
+	fcnt: 4 
+	[0] x
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t1/x
+npath: 1/x
+DIRNAME: /t1
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+dir_ind: 2
+APPENDING file#0
+old length: 0
+new dir length: 1
+npath: 
+}
+tfs_flush {
+	/t1/x
+}
+tfs_utime {
+	/t1/x
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 4 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_flush {
+	/t1/x
+}
+
+tfs_release(path="/t1/x", fi=0x29ac6c50)
+tfs_release {
+	/t1/x
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 4 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t2/y
+	fcnt: 4 
+	[0] x
+	[1] y
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t2/y
+npath: 2/y
+DIRNAME: /t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+dir_ind: 3
+APPENDING file#1
+old length: 0
+new dir length: 1
+npath: 
+}
+tfs_flush {
+	/t2/y
+}
+tfs_utime {
+	/t2/y
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 4 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_flush {
+	/t2/y
+}
+
+tfs_release(path="/t2/y", fi=0x2a2e9c50)
+tfs_release {
+	/t2/y
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000001
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000001
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_opendir {
+	/
+}
+tfs_readdir {
+	/
+	reading /mnt (4 files). why errors?
+	x
+	y
+	t1
+	t2
+	finished reading /mnt
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 4 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 4 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_releasedir {
+	/
+}
+tfs_opendir {
+	/t1
+}
+tfs_readdir {
+	/t1
+dirname: /t1
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+1
+Creating first list
+processing: 0 x
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 4 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_releasedir {
+	/t1
+}
+tfs_opendir {
+	/t2
+}
+tfs_readdir {
+	/t2
+dirname: /t2
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+1
+Creating first list
+processing: 1 y
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 4 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_releasedir {
+	/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 4
+retstat: -2
+}
+tfs_mknod {
+	/z
+tfs_open() {
+	 Last file: /z
+	fcnt: 4 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+    fi:
+    flags = 0x00000001
+    fh_old = 0x7f062a51488c
+    writepage = 469766304
+    direct_io = 0
+    keep_cache = 1
+    fh = 0x00007f0629ac6b90
+    lock_owner = 0x00007f061c0010a0
+> ftbl_newfile
+	 index: 4
+		new size:5 
+< ftbl_newfile
+full path is: /z
+npath: 
+}
+
+tfs_release(path="/z", fi=0x29ac6ab0)
+tfs_release {
+	/z
+    fi:
+    flags = 0x00000001
+    fh_old = 0x7f062a51488c
+    writepage = 469766304
+    direct_io = 0
+    keep_cache = 1
+    fh = 0x0000000000000004
+    lock_owner = 0x00007f061c0010a0
+}
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /z
+npath: 
+}
+tfs_flush {
+	/z
+}
+tfs_utime {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_flush {
+	/z
+}
+
+tfs_release(path="/z", fi=0x2a2e9c50)
+tfs_release {
+	/z
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t1/z
+npath: 1/z
+DIRNAME: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+dir_ind: 2
+APPENDING file#4
+old length: 1
+new dir length: 2
+npath: 
+}
+tfs_flush {
+	/t1/z
+}
+tfs_utime {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_flush {
+	/t1/z
+}
+
+tfs_release(path="/t1/z", fi=0x29ac6c50)
+tfs_release {
+	/t1/z
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t2/z
+npath: 2/z
+DIRNAME: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+dir_ind: 3
+APPENDING file#4
+old length: 1
+new dir length: 2
+npath: 
+}
+tfs_flush {
+	/t2/z
+}
+tfs_utime {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_flush {
+	/t2/z
+}
+
+tfs_release(path="/t2/z", fi=0x292a3c50)
+tfs_release {
+	/t2/z
+    fi:
+    flags = 0x00008801
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_opendir {
+	/
+}
+tfs_readdir {
+	/
+	reading /mnt (5 files). why errors?
+	x
+	y
+	t1
+	t2
+	z
+	finished reading /mnt
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/
+}
+tfs_opendir {
+	/t1
+}
+tfs_readdir {
+	/t1
+dirname: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+2
+Creating first list
+processing: 0 x
+filled
+processing: 4 z
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/t1
+}
+tfs_opendir {
+	/t2
+}
+tfs_readdir {
+	/t2
+dirname: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+2
+Creating first list
+processing: 1 y
+filled
+processing: 4 z
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_opendir {
+	/t1/t2
+}
+tfs_readdir {
+	/t1/t2
+dirname: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+2
+Creating first list
+dirname: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+Merging
+item = 0
+item = 4
+found item = 4
+added item: 4
+processing: 4 z
+filled
+}
+tfs_releasedir {
+	/t1/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /z
+npath: 
+}
+tfs_getxattr {
+	/z
+	(null)
+	security.capability
+}
+tfs_truncate {
+	/z
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_flush {
+	/z
+}
+tfs_getxattr {
+	/z
+	(null)
+	security.capability
+}
+tfs_write {
+	/z
+	29
+}
+tfs_flush {
+	/z
+}
+
+tfs_release(path="/z", fi=0x2a2e9c50)
+tfs_release {
+	/z
+    fi:
+    flags = 0x00008001
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t1/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t1/t2/z
+npath: 1/t2/z
+DIRNAME: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+dir_ind: 2
+npath: 2/z
+DIRNAME: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+dir_ind: 3
+npath: 
+}
+tfs_read {
+
+tfs_read(path="/t1/t2/z", buf=0x20001dd0, size=4096, offset=0, fi=0x292a3c50)
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_flush {
+	/t1/t2/z
+}
+
+tfs_release(path="/t1/t2/z", fi=0x29ac6c50)
+tfs_release {
+	/t1/t2/z
+    fi:
+    flags = 0x00008000
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_opendir {
+	/
+}
+tfs_readdir {
+	/
+	reading /mnt (5 files). why errors?
+	x
+	y
+	t1
+	t2
+	z
+	finished reading /mnt
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/
+}
+tfs_opendir {
+	/t1
+}
+tfs_readdir {
+	/t1
+dirname: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+2
+Creating first list
+processing: 0 x
+filled
+processing: 4 z
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/t1
+}
+tfs_opendir {
+	/t2
+}
+tfs_readdir {
+	/t2
+dirname: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+2
+Creating first list
+processing: 1 y
+filled
+processing: 4 z
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_open() {
+	 Last file: /y
+	fcnt: 5 
+	[0] x
+	[1] y
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /y
+npath: 
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t2/y
+npath: 2/y
+DIRNAME: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+dir_ind: 3
+npath: 
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t1/x
+	fcnt: 5 
+	[0] x
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t1/x
+npath: 1/x
+DIRNAME: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+dir_ind: 2
+npath: 
+}
+tfs_open() {
+	 Last file: /x
+	fcnt: 5 
+	[0] x
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /x
+npath: 
+}
+tfs_open() {
+	 Last file: /t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t2/z
+npath: 2/z
+DIRNAME: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+dir_ind: 3
+npath: 
+}
+tfs_open() {
+	 Last file: /t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t1/z
+npath: 1/z
+DIRNAME: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+dir_ind: 2
+npath: 
+}
+tfs_read {
+
+tfs_read(path="/y", buf=0x20001f50, size=4096, offset=0, fi=0x292a3c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000001
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000001
+    lock_owner = 0x0000000000000000
+}
+tfs_read {
+
+tfs_read(path="/t2/z", buf=0x24002a80, size=4096, offset=0, fi=0x2a2e9c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_read {
+
+tfs_read(path="/t2/y", buf=0x1c0018f0, size=4096, offset=0, fi=0x29ac6c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000001
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000001
+    lock_owner = 0x0000000000000000
+}
+tfs_read {
+
+tfs_read(path="/t1/z", buf=0x20001f50, size=4096, offset=0, fi=0x292a3c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_read {
+
+tfs_read(path="/t1/x", buf=0x24002a80, size=4096, offset=0, fi=0x2a2e9c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_read {
+
+tfs_read(path="/x", buf=0x1c0018f0, size=4096, offset=0, fi=0x29ac6c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_open() {
+	 Last file: /z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /z
+npath: 
+}
+tfs_flush {
+	/t2/z
+}
+
+tfs_release(path="/t2/z", fi=0x292a3c50)
+tfs_release {
+	/t2/z
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_flush {
+	/x
+}
+
+tfs_release(path="/x", fi=0x29ac6c50)
+tfs_release {
+	/x
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_read {
+
+tfs_read(path="/z", buf=0x20001f50, size=4096, offset=0, fi=0x292a3c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_flush {
+	/t1/x
+}
+
+tfs_release(path="/t1/x", fi=0x2a2e9c50)
+tfs_release {
+	/t1/x
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_flush {
+	/t1/z
+}
+
+tfs_release(path="/t1/z", fi=0x292a3c50)
+tfs_release {
+	/t1/z
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_flush {
+	/t2/y
+}
+
+tfs_release(path="/t2/y", fi=0x292a3c50)
+tfs_release {
+	/t2/y
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000001
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000001
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_flush {
+	/y
+}
+
+tfs_release(path="/y", fi=0x292a3c50)
+tfs_release {
+	/y
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000001
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000001
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_flush {
+	/z
+}
+
+tfs_release(path="/z", fi=0x292a3c50)
+tfs_release {
+	/z
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000004
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000004
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_opendir {
+	/
+}
+tfs_readdir {
+	/
+	reading /mnt (5 files). why errors?
+	x
+	y
+	t1
+	t2
+	z
+	finished reading /mnt
+}
+tfs_releasedir {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_opendir {
+	/t1
+}
+tfs_readdir {
+	/t1
+dirname: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+3
+Creating first list
+processing: 0 x
+filled
+processing: 0 x
+filled
+processing: 4 z
+filled
+}
+tfs_releasedir {
+	/t1
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_opendir {
+	/t2
+}
+tfs_readdir {
+	/t2
+dirname: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+3
+Creating first list
+processing: 0 x
+filled
+processing: 1 y
+filled
+processing: 4 z
+filled
+}
+tfs_releasedir {
+	/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_opendir {
+	/
+}
+tfs_readdir {
+	/
+	reading /mnt (5 files). why errors?
+	x
+	y
+	t1
+	t2
+	z
+	finished reading /mnt
+}
+tfs_getattr
+tfs_inner_getattr {
+	/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	got ind: 2
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/
+}
+tfs_opendir {
+	/t1
+}
+tfs_readdir {
+	/t1
+dirname: /t1
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+index 2
+start 2
+3
+Creating first list
+processing: 0 x
+filled
+processing: 0 x
+filled
+processing: 4 z
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t1/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/t1
+}
+tfs_opendir {
+	/t2
+}
+tfs_readdir {
+	/t2
+dirname: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+index 3
+start 3
+3
+Creating first list
+processing: 0 x
+filled
+processing: 1 y
+filled
+processing: 4 z
+filled
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/y
+	fcnt: 5 
+	[0] x
+	[1] y
+	got ind: 1
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/z
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	[4] z
+	got ind: 4
+retstat: 0
+}
+tfs_releasedir {
+	/t2
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_open() {
+	 Last file: /t2/x
+	fcnt: 5 
+	[0] x
+    fi:
+    flags = 0x00109000
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+full path is: /t2/x
+npath: 2/x
+DIRNAME: /t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+dir_ind: 3
+npath: 
+}
+tfs_read {
+
+tfs_read(path="/t2/x", buf=0x200027f0, size=4096, offset=0, fi=0x292a3c50)
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_flush {
+	/t2/x
+}
+
+tfs_release(path="/t2/x", fi=0x29ac6c50)
+tfs_release {
+	/t2/x
+    fi:
+    flags = 0x00109800
+    fh_old = 0x00000000
+    writepage = 0
+    direct_io = 0
+    keep_cache = 0
+    fh = 0x0000000000000000
+    lock_owner = 0x0000000000000000
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2
+	fcnt: 5 
+	[0] x
+	[1] y
+	[2] t1
+	[3] t2
+	got ind: 3
+retstat: 0
+}
+tfs_getattr
+tfs_inner_getattr {
+	/t2/x
+	fcnt: 5 
+	[0] x
+	got ind: 0
+retstat: 0
+}
+tfs_statfs {
+	/
+}
+tfs_statfs {
+	/
+}
+tfs_statfs {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
+tfs_getattr
+tfs_inner_getattr {
+	/
+}
